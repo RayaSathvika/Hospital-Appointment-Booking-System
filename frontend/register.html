@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patient Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="register">
+    <header class="topbar">
+        <a class="brand" href="index.html"><span class="logo">+</span><div><strong>Hospital Appointment</strong><span>Booking System</span></div></a>
+        <nav class="nav" data-nav="public"></nav>
+    </header>
+    <main class="auth-wrap">
+        <form class="auth-card" id="register-form">
+            <div class="avatar">👤</div>
+            <h1>Patient Registration</h1>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" required />
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" minlength="6" required />
+            <label for="confirm">Confirm Password</label>
+            <input id="confirm" name="confirm" type="password" minlength="6" required />
+            <button type="submit">Register</button>
+            <p class="switch">Already registered? <a href="login.html">Login here</a></p>
+            <div id="message" class="message" hidden></div>
+        </form>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

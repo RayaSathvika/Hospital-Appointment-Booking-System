@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find a Doctor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="search">
+    <header class="topbar">
+        <a class="brand" href="index.html"><span class="logo">+</span><div><strong>Hospital Appointment</strong><span>Booking System</span></div></a>
+        <nav class="nav" data-nav="public"></nav>
+    </header>
+    <main class="page">
+        <section class="panel">
+            <h1>Find a Doctor</h1>
+            <form id="search-form" class="search-panel">
+                <div>
+                    <label for="specialization">Specialization</label>
+                    <input id="specialization" list="specialization-list" placeholder="Cardiology" required />
+                    <datalist id="specialization-list"></datalist>
+                </div>
+                <div>
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option>Hyderabad</option>
+                    </select>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+            <div id="message" class="message" hidden></div>
+        </section>
+        <section id="results" class="doctor-list" style="margin-top: 16px;"></section>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

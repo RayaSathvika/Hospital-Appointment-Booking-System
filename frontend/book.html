@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Appointment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="book">
+    <div class="shell">
+        <aside class="sidebar">
+            <a class="brand" href="index.html"><span class="logo">+</span><div><strong>Hospital Appointment</strong><span>Booking</span></div></a>
+            <nav class="side-nav" data-nav="patient"></nav>
+            <button class="js-logout" type="button">Logout</button>
+        </aside>
+        <main class="shell-main">
+            <h1>Book Appointment</h1>
+            <p class="lede">Choose a date and time. An occupied slot is rejected.</p>
+            <div class="book-layout">
+                <section class="panel doctor-side" id="doctor-card"></section>
+                <section class="panel">
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor"></select>
+                    <label for="date">Select Date</label>
+                    <input id="date" type="date" required />
+                    <p class="muted" id="availability"></p>
+                    <label>Select Time Slot</label>
+                    <div id="slots" class="slots"></div>
+                    <div class="confirm-actions" style="justify-content: flex-start;">
+                        <button type="button" id="book-button">Book Appointment</button>
+                    </div>
+                    <div id="message" class="message" hidden></div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/book.js"></script>
+</body>
+</html>

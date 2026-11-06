@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin · Appointment Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="admin">
+    <div id="login-panel" class="auth-wrap">
+        <form class="auth-card" id="admin-form">
+            <div class="avatar">＋</div>
+            <h1>Admin Login</h1>
+            <p class="muted">Desk login: admin / admin123</p>
+            <label for="username">Username</label>
+            <input id="username" required />
+            <label for="password">Password</label>
+            <input id="password" type="password" required />
+            <button type="submit">Login</button>
+            <div id="login-message" class="message" hidden></div>
+        </form>
+    </div>
+    <div class="shell" id="manage-panel" hidden>
+        <aside class="sidebar">
+            <a class="brand" href="index.html"><span class="logo">+</span><div><strong>Admin Panel</strong><span>Hospital Desk</span></div></a>
+            <nav class="side-nav">
+                <a href="#" data-section="appointments" class="active">Appointments</a>
+                <a href="#" data-section="patients">Patients</a>
+                <a href="#" data-section="doctors">Doctors</a>
+                <a href="#" data-section="reports">Reports</a>
+                <button type="button" id="admin-logout">Logout</button>
+            </nav>
+        </aside>
+        <main class="shell-main">
+            <h1>Appointment Management</h1>
+            <div id="admin-message" class="message" hidden></div>
+            <section class="panel table-wrap" id="admin-table"></section>
+        </main>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

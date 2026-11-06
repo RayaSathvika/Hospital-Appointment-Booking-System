@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cancel appointment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="cancel">
+    <div class="shell">
+        <aside class="sidebar">
+            <a class="brand" href="index.html"><span class="logo">+</span><div><strong>Hospital Appointment</strong><span>Booking</span></div></a>
+            <nav class="side-nav" data-nav="patient"></nav>
+            <button class="js-logout" type="button">Logout</button>
+        </aside>
+        <main class="shell-main">
+            <h1>Cancel appointment</h1>
+            <p class="lede">Only visits that are still booked can be cancelled.</p>
+            <div id="message" class="message" hidden></div>
+            <div id="list"></div>
+        </main>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/cancel.js"></script>
+</body>
+</html>

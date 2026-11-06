@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Appointments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="appointments">
+    <div class="shell">
+        <aside class="sidebar">
+            <a class="brand" href="index.html"><span class="logo">+</span><div><strong>Hospital Appointment</strong><span>Booking</span></div></a>
+            <nav class="side-nav" data-nav="patient"></nav>
+            <button class="js-logout" type="button">Logout</button>
+        </aside>
+        <main class="shell-main">
+            <h1>My Appointments</h1>
+            <p class="lede" id="intro">Upcoming and past visits.</p>
+            <div class="tabs">
+                <button type="button" class="active" id="tab-upcoming">Upcoming</button>
+                <button type="button" id="tab-past">Past</button>
+            </div>
+            <div id="message" class="message" hidden></div>
+            <div id="list"></div>
+        </main>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/appointments.js"></script>
+</body>
+</html>
